@@ -1,0 +1,21 @@
+import { site } from "../data/site";
+
+export function Footer() {
+  return `
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div>
+          <p class="footer-title">Let’s build something quiet, useful, and lasting.</p>
+          <a class="footer-link" href="${site.github}" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
+
+        <div class="footer-meta">
+          <span>© ${site.year} ${site.owner}</span>
+          <span>WONxLABS</span>
+        </div>
+      </div>
+    </footer>
+  `;
+}
