@@ -1,4 +1,4 @@
-# WONxLABS Website
+# wonxdev Website
 A premium personal portfolio website built with Vite, Vanilla JavaScript, HTML, and CSS.
 
 ## Tech Stack
@@ -72,7 +72,7 @@ This repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) th
 3. Push to `main` (or run the workflow manually from the **Actions** tab). Your site will be live at:
    - `https://<username>.github.io/` (if this is your `<username>.github.io` repo), or
    - `https://<username>.github.io/<repo-name>/` (if this is a project repo)
-4. **Custom domain (optional):** if you want `wonxlabs.com`, add a `public/CNAME` file containing just `wonxlabs.com`, point your domain's DNS at GitHub Pages, then enable it under **Settings → Pages → Custom domain**. Without a custom domain, update the URLs in `index.html`, `public/sitemap.xml`, and `public/robots.txt` to match your actual `github.io` URL.
+4. **Custom domain (optional):** if you want `wonxdev.com`, add a `public/CNAME` file containing just `wonxdev.com`, point your domain's DNS at GitHub Pages, then enable it under **Settings → Pages → Custom domain**. Without a custom domain, update the URLs in `index.html`, `public/sitemap.xml`, and `public/robots.txt` to match your actual `github.io` URL.
 
 No manual build step is required — the workflow runs `npm ci` and `npm run build` for you on every push.
 

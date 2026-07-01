@@ -15,10 +15,10 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.875rem;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, var(--accent), var(--primary), var(--secondary));
   color: white;
   font-weight: 700;
-  box-shadow: 0 0.5rem 1.5rem rgba(139, 124, 245, 0.24);
+  box-shadow: 0 0.7rem 1.8rem rgba(166, 108, 255, 0.24);
 }
 
 .logo-text {
@@ -90,7 +90,7 @@
   left: 0;
   width: 0%;
   height: 0.188rem;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: linear-gradient(90deg, var(--accent), var(--primary), var(--secondary));
   z-index: 9999;
 }
 
@@ -101,10 +101,10 @@
   display: inline-flex;
   align-items: center;
   width: fit-content;
-  padding: 0.45rem 0.9rem;
+  padding: 0.45rem 0.95rem;
   border-radius: 62.438rem;
-  background: rgba(139, 124, 245, 0.12);
-  color: var(--primary);
+  background: rgba(247, 201, 92, 0.14);
+  color: var(--accent);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -198,11 +198,13 @@
 }
 
 .button-primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #140f1d;
+  box-shadow: 0 14px 32px rgba(166, 108, 255, 0.24);
 }
 
 .button-primary:hover {
-  background: color-mix(in srgb, var(--primary) 90%, white);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 90%, white), color-mix(in srgb, var(--accent) 90%, white));
 }
 
 .button-secondary {

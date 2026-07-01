@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wonxlabs.com/sitemap.xml
+Sitemap: https://wonxdev.com/sitemap.xml

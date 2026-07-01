@@ -16,7 +16,7 @@ GitHub Pages
 
 ## Domain
 
-https://wonxlabs.com
+https://wonxdev.com
 
 The repository should support a custom domain through GitHub Pages.
 
@@ -72,7 +72,7 @@ Deploy
 
 ↓
 
-https://wonxlabs.com
+https://wonxdev.com
 
 Deployment should require no manual file editing.
 

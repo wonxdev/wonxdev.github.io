@@ -2,7 +2,7 @@
 
 ## Project
 
-Production portfolio website for WONxLABS.
+Production portfolio website for wonxdev.
 
 Minimal.
 

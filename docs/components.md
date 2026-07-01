@@ -1,6 +1,6 @@
 # Components
 
-This document defines the component architecture for the WONxLABS Website.
+This document defines the component architecture for the wonxdev Website.
 
 The website follows a modular, single-responsibility architecture. Every UI element belongs to exactly one component. Components should be small, reusable, and maintainable.
 

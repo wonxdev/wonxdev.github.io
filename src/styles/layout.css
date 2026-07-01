@@ -21,7 +21,7 @@ nav {
   justify-content: space-between;
   padding: 0 1.5rem;
   border-radius: 999px;
-  background: rgba(18, 18, 23, 0.78);
+  background: rgba(18, 16, 25, 0.78);
   backdrop-filter: blur(22px);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);

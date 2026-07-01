@@ -1,7 +1,7 @@
 {
-  "name": "WONxLABS Portfolio — Nathan",
-  "short_name": "WONxLABS",
-  "description": "WONxLABS Portfolio by Nathan — a focused front-end portfolio built with Vanilla JavaScript, Vite, and accessible modern web design.",
+  "name": "wonxdev Portfolio — Nathan",
+  "short_name": "wonxdev",
+  "description": "wonxdev Portfolio by Nathan — a focused front-end portfolio built with Vanilla JavaScript, Vite, and accessible modern web design.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

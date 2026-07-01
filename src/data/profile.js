@@ -1,17 +1,17 @@
 export const profile = {
   name: "Nathan",
-  title: "Frontend Developer",
+  title: "Frontend Developer & UI Engineer",
 
   location: "Indonesia",
-  availability: "Available for internships",
+  availability: "Available for freelance & full-time opportunities",
 
   about:
-    "I’m a Computer Science student at BINUS University who enjoys building calm, high-quality interfaces with a strong focus on frontend craft, accessibility, and maintainable code.",
+    "I’m a Computer Science student at BINUS University who enjoys building polished, high-performance interfaces with a strong focus on frontend craft, accessibility, and maintainable systems.",
 
-  tagline: "Creating polished digital experiences with clarity and restraint.",
+  tagline: "Crafting refined digital experiences with clarity, momentum, and intent.",
 
   summary:
-    "Computer Science student focused on frontend engineering, modern web technologies, and building clean digital experiences.",
+    "Computer Science student focused on frontend engineering, modern web technologies, and building clean digital experiences that feel premium and dependable.",
 
   principles: [
     "Clear hierarchy over visual noise.",
@@ -21,7 +21,7 @@ export const profile = {
 
   skills: {
     languages: ["HTML", "CSS", "JavaScript", "TypeScript", "Python"],
-    frameworks: ["Vite"],
+    frameworks: ["Vite", "React"],
     tools: ["Git", "GitHub", "VS Code", "Figma"]
   }
 };

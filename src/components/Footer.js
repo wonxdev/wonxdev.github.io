@@ -5,7 +5,7 @@ export function Footer() {
     <footer class="site-footer">
       <div class="footer-content">
         <div>
-          <p class="footer-title">Let’s build something quiet, useful, and lasting.</p>
+          <p class="footer-title">Let’s build something sharp, useful, and lasting.</p>
           <a class="footer-link" href="${site.github}" target="_blank" rel="noreferrer">
             GitHub
           </a>
@@ -13,7 +13,7 @@ export function Footer() {
 
         <div class="footer-meta">
           <span>© ${site.year} ${site.owner}</span>
-          <span>WONxLABS</span>
+          <span>wonxdev</span>
         </div>
       </div>
     </footer>

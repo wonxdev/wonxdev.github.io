@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The WONxLABS Website is a production-ready personal portfolio built with modern Vanilla JavaScript, HTML, CSS, and Vite.
+The wonxdev Website is a production-ready personal portfolio built with modern Vanilla JavaScript, HTML, CSS, and Vite.
 
 The project prioritizes:
 
@@ -74,7 +74,7 @@ The application entry point assembles the entire page before initializing intera
 # Folder Structure
 
 ```text
-WONxLABS/
+wonxdev/
 
 ├── src/
 │   ├── assets/

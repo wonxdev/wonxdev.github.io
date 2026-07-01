@@ -1,8 +1,8 @@
 export const site = {
-  name: "WONxLABS",
+  name: "wonxdev",
   owner: "Nathan",
 
-  github: "https://github.com/WONxPRO",
+  github: "https://github.com/wonxdev",
 
   year: new Date().getFullYear(),
 };

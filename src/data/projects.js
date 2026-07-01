@@ -4,9 +4,9 @@ export const projects = [
     id: 1,
     title: "This Portfolio",
     description:
-      "A premium portfolio experience built with Vanilla JavaScript and Vite, designed around restraint, clarity, and strong visual hierarchy.",
+      "A premium portfolio experience built with modern JavaScript and Vite, designed around restraint, clarity, and a polished visual language.",
     technologies: ["HTML", "CSS", "JavaScript", "Vite"],
-    github: "https://github.com/WONxPRO/WONxLABS-Website",
+    github: "https://github.com/wonxdev/wonxdev.github.io",
     live: "#hero",
     status: "Completed"
   },

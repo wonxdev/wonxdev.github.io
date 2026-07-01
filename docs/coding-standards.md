@@ -1,6 +1,6 @@
 # Coding Standards
 
-This document defines the coding standards for the WONxLABS Website. Every contributor, including AI assistants, must follow these rules.
+This document defines the coding standards for the wonxdev Website. Every contributor, including AI assistants, must follow these rules.
 
 ---
 
