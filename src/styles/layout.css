@@ -65,7 +65,7 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -90,6 +90,10 @@ section {
 
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-list {
+    grid-template-columns: 1fr;
   }
 }
 

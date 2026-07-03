@@ -12,6 +12,11 @@ export function Timeline() {
 
           <div class="timeline-content">
             <h3>${item.title}</h3>
+            ${
+              item.organization
+                ? `<p class="timeline-org">${item.organization}</p>`
+                : ""
+            }
             <p>${item.description}</p>
           </div>
         </article>
@@ -25,7 +30,7 @@ export function Timeline() {
         eyebrow: "Journey",
         title: "A steady progression",
         description:
-          "Small steps, consistent practice, and a focus on shipping thoughtful work."
+          "From a first Construct 3 game to representing BINUS University Semarang — a timeline of projects, leadership, and outreach."
       })}
 
       <div class="timeline">

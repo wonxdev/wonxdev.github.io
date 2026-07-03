@@ -4,19 +4,23 @@ export const navigation = [
     href: "#hero",
   },
   {
-    label: "Projects",
-    href: "#projects",
-  },
-  {
     label: "About",
     href: "#about",
+  },
+  {
+    label: "Projects",
+    href: "#projects",
   },
   {
     label: "Skills",
     href: "#skills",
   },
   {
-  label: "Timeline",
-  href: "#timeline",
+    label: "Timeline",
+    href: "#timeline",
+  },
+  {
+    label: "Contact",
+    href: "#contact",
   },
 ];

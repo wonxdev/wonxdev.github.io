@@ -1,35 +1,118 @@
 export const projects = [
   {
-    featured: true,
     id: 1,
-    title: "This Portfolio",
+    title: "RecisCare",
+    category: "Progressive Web App",
+    year: "Senior High School Project",
+    featured: true,
     description:
-      "A premium portfolio experience built with modern JavaScript and Vite, designed around restraint, clarity, and a polished visual language.",
-    technologies: ["HTML", "CSS", "JavaScript", "Vite"],
-    github: "https://github.com/wonxdev/wonxdev.github.io",
-    live: "#hero",
-    status: "Completed"
+      "A school duty attendance system centralizing schedules, attendance submissions, and review workflows for students, teachers, class leaders, and administrators.",
+    role: ["Developer"],
+    technologies: [
+      "JavaScript",
+      "Progressive Web Apps",
+      "Role-based Interfaces",
+      "LocalStorage",
+      "Responsive Design",
+    ],
+    links: [
+      { label: "Repository", href: "https://github.com/wonxdev/RecisCare" },
+    ],
   },
   {
-    featured: false,
     id: 2,
-    title: "Focus Canvas",
+    title: "Assignly",
+    category: "Web Application",
+    year: "Senior High School Project",
+    featured: false,
     description:
-      "A calm planning workspace for daily priorities, deep work, and a distraction-free interface.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "",
-    live: "#projects",
-    status: "In Progress"
+      "A web-based assignment management application developed to centralize assignment tracking for students, teachers, and class secretaries. The portfolio version runs entirely inside the browser using LocalStorage while preserving the original workflow.",
+    role: ["Developer"],
+    technologies: [
+      "JavaScript",
+      "Role-based Interfaces",
+      "LocalStorage",
+      "Responsive Design",
+    ],
+    links: [
+      { label: "Repository", href: "https://github.com/wonxdev/Assignly" },
+    ],
   },
   {
-    featured: false,
     id: 3,
-    title: "Interface Notes",
+    title: "RecisCam",
+    category: "Progressive Web App",
+    year: "Senior High School Project",
+    featured: false,
     description:
-      "A compact design-system playground focused on typography, spacing, and component rhythm.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "",
-    live: "#projects",
-    status: "Concept"
-  }
+      "A Progressive Web App that simulates a complete school cleaning-duty attendance workflow with photo verification, running entirely inside the browser without a backend.",
+    role: ["Developer"],
+    technologies: [
+      "JavaScript",
+      "Progressive Web Apps",
+      "Camera Integration",
+      "Browser APIs",
+      "LocalStorage",
+    ],
+    links: [
+      { label: "Repository", href: "https://github.com/wonxdev/RecisCam" },
+    ],
+  },
+  {
+    id: 4,
+    title: "RecisPermit",
+    category: "Progressive Web App",
+    year: "Senior High School Project",
+    featured: false,
+    description:
+      "A student leave and permission management system allowing parents to submit permission requests while administrators review them through a centralized dashboard.",
+    role: ["Developer"],
+    technologies: [
+      "JavaScript",
+      "Progressive Web Apps",
+      "Role-based Interfaces",
+      "LocalStorage",
+    ],
+    links: [
+      { label: "Repository", href: "https://github.com/wonxdev/RecisPermit" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Enchanted Forest",
+    category: "Game Development",
+    year: "2023",
+    featured: false,
+    description:
+      "A collaborative game developed with Mikael Isaac Jensen Hermantoro and Kennard Shan Hariyanto during the Coding Extracurricular at SMP PL Bintang Laut Solo. Unlike many beginner Construct projects, nearly every visual asset — trees, maps, environments, and other in-game artwork — was created from scratch by the team, who also designed and implemented the gameplay themselves while learning through documentation and tutorials.",
+    role: ["Game Developer", "Game Artist"],
+    technologies: ["Construct 3", "Original Pixel Art", "Level Design"],
+    links: [
+      {
+        label: "Official Project",
+        href: "https://smpbintanglautsolo.sch.id/game-encthanted-forest/",
+      },
+      {
+        label: "Playable Version",
+        href: "https://friendly-florentine-a69f88.netlify.app/",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Grape Collector",
+    category: "Game Development",
+    year: "2022",
+    featured: false,
+    description:
+      "A simple top-down 2D item-collection game developed using Construct 3 during my school's Coding Extracurricular. This project introduced me to game logic, level design, and event-based programming.",
+    role: ["Developer"],
+    technologies: ["Construct 3", "Game Logic", "Level Design"],
+    links: [
+      {
+        label: "Reference",
+        href: "https://smpbintanglautsolo.sch.id/hasil-karya-ekstrakurikuler-coding/",
+      },
+    ],
+  },
 ];
