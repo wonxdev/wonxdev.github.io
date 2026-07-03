@@ -5,6 +5,7 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { About } from "./components/About";
 import { Timeline } from "./components/Timeline";
+import { Contact } from "./components/Contact";
 
 export function App() {
   return `
@@ -14,10 +15,11 @@ export function App() {
 
     <main id="main-content">
       ${Hero()}
-      ${Projects()}
       ${About()}
+      ${Projects()}
       ${Skills()}
       ${Timeline()}
+      ${Contact()}
     </main>
 
     ${Footer()}

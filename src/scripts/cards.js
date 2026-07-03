@@ -1,5 +1,5 @@
 export function initCards() {
-  const cards = document.querySelectorAll(".hero-card, .project-card");
+  const cards = document.querySelectorAll(".hero-card, .project-card, .contact-card");
 
   cards.forEach((card) => {
     card.addEventListener("mousedown", () => {

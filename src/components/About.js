@@ -2,15 +2,15 @@ import { profile } from "../data/profile";
 import { SectionHeader } from "./SectionHeader";
 
 export function About() {
-  const principles = profile.principles.map((item) => `<li>${item}</li>`).join("");
+  const interests = profile.interests.map((item) => `<li>${item}</li>`).join("");
 
   return `
     <section id="about">
       ${SectionHeader({
         eyebrow: "About",
-        title: "Focused on thoughtful craft",
+        title: "From classroom projects to real systems",
         description:
-          "I care about clarity, durable systems, and interfaces that feel calm and considered."
+          "A closer look at how I got here, and what I care about building next."
       })}
 
       <div class="about-grid">
@@ -19,20 +19,28 @@ export function About() {
             ${profile.about}
           </p>
 
-          <ul class="about-list">
-            ${principles}
-          </ul>
+          <div class="about-interests">
+            <h3 class="about-subheading">Primary Interests</h3>
+            <ul class="about-list">
+              ${interests}
+            </ul>
+          </div>
         </div>
 
         <aside class="about-card surface">
+          <div>
+            <span>Education</span>
+            <strong>${profile.availability}</strong>
+          </div>
+
           <div>
             <span>Location</span>
             <strong>${profile.location}</strong>
           </div>
 
           <div>
-            <span>Status</span>
-            <strong>${profile.availability}</strong>
+            <span>Focus</span>
+            <strong>Software Development &amp; Educational Technology</strong>
           </div>
         </aside>
       </div>
