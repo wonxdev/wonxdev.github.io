@@ -13,6 +13,9 @@ export function Footer() {
             <a class="footer-link" href="${site.linkedin}" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
+            <a class="footer-link" href="${site.emailHref}" target="_blank" rel="noreferrer">
+              Email
+            </a>
           </div>
         </div>
 

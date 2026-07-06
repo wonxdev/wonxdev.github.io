@@ -1,8 +1,9 @@
 export { About } from "./About";
+export { Contact } from "./Contact";
 export { Footer } from "./Footer";
 export { Hero } from "./Hero";
-export { Navbar } from "./Navbar";
+export { IntroBurn } from "./IntroBurn";
 export { Projects } from "./Projects";
+export { Sidebar } from "./Sidebar";
 export { Skills } from "./Skills";
 export { Timeline } from "./Timeline";
-export { Contact } from "./Contact";

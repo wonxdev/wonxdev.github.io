@@ -1,31 +1,11 @@
-header {
-  position: sticky;
-  top: 1.25rem;
-  z-index: 100;
-  pointer-events: none;
-  padding-top: 0.75rem;
+body {
+  padding-left: var(--sidebar-width);
 }
 
-nav,
-main {
+main,
+.site-footer {
   width: min(var(--content-width), calc(100% - 2rem));
   margin-inline: auto;
-}
-
-nav {
-  width: min(var(--content-width), calc(100% - 2rem));
-  height: 76px;
-  margin-inline: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.5rem;
-  border-radius: 999px;
-  background: rgba(18, 16, 25, 0.78);
-  backdrop-filter: blur(22px);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  pointer-events: auto;
 }
 
 section {
@@ -79,6 +59,27 @@ section {
 
 /* ---------- Laptop ---------- */
 @media (max-width: 992px) {
+  body {
+    padding-left: 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .sidebar {
+    width: min(20rem, 85vw);
+    transform: translateX(-100%);
+  }
+
+  html.nav-open .sidebar {
+    transform: translateX(0);
+  }
+
+  html.nav-open {
+    overflow: hidden;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -99,18 +100,6 @@ section {
 
 /* ---------- Tablet ---------- */
 @media (max-width: 768px) {
-  nav {
-    height: auto;
-    padding: 1rem 0;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 0.75rem;
@@ -124,11 +113,6 @@ section {
 
 /* ---------- Mobile ---------- */
 @media (max-width: 576px) {
-  main,
-  nav {
-    width: min(100% - 2rem, var(--content-width));
-  }
-
   .projects-grid,
   .skills-grid {
     grid-template-columns: 1fr;

@@ -21,9 +21,12 @@ export function initScroll() {
     });
 
     navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
+      const isActive = link.getAttribute("href") === `#${current}`;
+      link.classList.toggle("active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
       }
     });
   }

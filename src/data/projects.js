@@ -17,6 +17,7 @@ export const projects = [
     ],
     links: [
       { label: "Repository", href: "https://github.com/wonxdev/RecisCare" },
+      { label: "Demo Version", href: "https://wonxdev.github.io/RecisCare" },
     ],
   },
   {
@@ -36,6 +37,7 @@ export const projects = [
     ],
     links: [
       { label: "Repository", href: "https://github.com/wonxdev/Assignly" },
+      { label: "Demo Version", href: "https://wonxdev.github.io/Assignly" },
     ],
   },
   {
@@ -56,6 +58,7 @@ export const projects = [
     ],
     links: [
       { label: "Repository", href: "https://github.com/wonxdev/RecisCam" },
+      { label: "Demo Version", href: "https://wonxdev.github.io/RecisCam" },
     ],
   },
   {
@@ -75,6 +78,7 @@ export const projects = [
     ],
     links: [
       { label: "Repository", href: "https://github.com/wonxdev/RecisPermit" },
+      { label: "Demo Version", href: "https://wonxdev.github.io/RecisPermit" },
     ],
   },
   {
@@ -88,14 +92,8 @@ export const projects = [
     role: ["Game Developer", "Game Artist"],
     technologies: ["Construct 3", "Original Pixel Art", "Level Design"],
     links: [
-      {
-        label: "Official Project",
-        href: "https://smpbintanglautsolo.sch.id/game-encthanted-forest/",
-      },
-      {
-        label: "Playable Version",
-        href: "https://friendly-florentine-a69f88.netlify.app/",
-      },
+      { label: "Official Project", href: "https://smpbintanglautsolo.sch.id/game-encthanted-forest/" },
+      { label: "Playable Version", href: "https://friendly-florentine-a69f88.netlify.app/" },
     ],
   },
   {
@@ -109,10 +107,7 @@ export const projects = [
     role: ["Developer"],
     technologies: ["Construct 3", "Game Logic", "Level Design"],
     links: [
-      {
-        label: "Reference",
-        href: "https://smpbintanglautsolo.sch.id/hasil-karya-ekstrakurikuler-coding/",
-      },
+      { label: "Reference", href: "https://smpbintanglautsolo.sch.id/hasil-karya-ekstrakurikuler-coding/" },
     ],
   },
 ];

@@ -1,16 +1,13 @@
 import { profile } from "../data/profile";
 import { site } from "../data/site";
-
-const githubIcon = `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.29 9.28 7.86 10.78.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.53-3.88-1.53-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.2.67.8.56A10.53 10.53 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>`;
-
-const linkedinIcon = `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM.5 8.98h8.96V23H.5V8.98ZM17.19 8.7c-2.13 0-3.56 1.14-3.94 1.88h-.06v-1.6H4.6V23h8.7v-7.08c0-1.87.35-3.68 2.67-3.68 2.29 0 2.33 2.14 2.33 3.8V23H27v-7.83c0-4.06-.87-7.47-5.81-7.47Z"/></svg>`;
+import { githubIcon, linkedinIcon } from "./icons";
 
 export function Hero() {
   const roleChips = profile.roles.map((role) => `<span>${role}</span>`).join("");
 
-  const resumeAttrs = site.resume
-    ? `href="${site.resume}" target="_blank" rel="noreferrer"`
-    : `href="#" aria-disabled="true" title="Resume coming soon" onclick="return false;"`;
+  const resumeButton = site.resume
+    ? `<a href="${site.resume}" target="_blank" rel="noreferrer" class="button button-secondary">Download Resume</a>`
+    : `<span class="button button-secondary button-disabled" aria-disabled="true" title="Resume coming soon">Download Resume</span>`;
 
   return `
     <section id="hero" class="hero">
@@ -20,7 +17,8 @@ export function Hero() {
         <h1>${profile.name}</h1>
 
         <h2 class="hero-tagline">
-          ${profile.tagline}
+          ${profile.tagline.line1}<span class="gradient-work"> ${profile.tagline.highlight1}</span>${profile.tagline.line2}<br>
+          ${profile.tagline.line3}<span class="gradient-last"> ${profile.tagline.highlight2}</span>${profile.tagline.line4}
         </h2>
 
         <p class="hero-summary">
@@ -32,9 +30,7 @@ export function Hero() {
             View Projects
           </a>
 
-          <a ${resumeAttrs} class="button button-secondary${site.resume ? "" : " button-disabled"}">
-            Download Resume
-          </a>
+          ${resumeButton}
 
           <a href="#contact" class="button button-secondary">
             Contact
