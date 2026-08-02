@@ -1,5 +1,48 @@
 export const projects = [
   {
+    id: 7,
+    title: "WonxSkillTree",
+    category: "Progressive Web App",
+    year: "Personal Project",
+    featured: false,
+    description:
+      "A gamified personal skill tree with 61 nodes across 10 branches, paired with a daily routine tracker that counts streaks. Progress unlocks through prerequisites like a game skill tree, and data syncs to Google Drive or stays fully local.",
+    role: ["Developer"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Google Drive API",
+      "Progressive Web Apps",
+    ],
+    links: [
+      { label: "Repository", href: "https://github.com/wonxdev/wonxskilltree" },
+      { label: "Live App", href: "https://wonxdev.github.io/wonxskilltree/" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Money Tracker",
+    category: "Progressive Web App",
+    year: "Personal Project",
+    featured: false,
+    description:
+      "A lightweight income and expense tracker with calculator-style entry, multiple ledgers and accounts, custom emoji categories, and monthly insight charts. Built local-first with no login required, working fully offline with optional Google Drive sync.",
+    role: ["Developer"],
+    technologies: [
+      "JavaScript",
+      "IndexedDB",
+      "Service Workers",
+      "Google Drive API",
+      "Progressive Web Apps",
+    ],
+    links: [
+      { label: "Repository", href: "https://github.com/wonxdev/moneytracker" },
+      { label: "Live App", href: "https://wonxdev.github.io/moneytracker/" },
+    ],
+  },
+  {
     id: 1,
     title: "RecisCare",
     category: "Progressive Web App",
