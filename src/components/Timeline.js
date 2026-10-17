@@ -30,7 +30,7 @@ export function Timeline() {
         eyebrow: "Journey",
         title: "A steady progression",
         description:
-          "From a first Construct 3 game to representing BINUS University Semarang — a timeline of projects, leadership, and outreach."
+          "From a first Construct 3 game to representing BINUS University Semarang - a timeline of projects, leadership, and outreach."
       })}
 
       <div class="timeline">

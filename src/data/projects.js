@@ -131,7 +131,7 @@ export const projects = [
     year: "2023",
     featured: false,
     description:
-      "A collaborative game developed with Mikael Isaac Jensen Hermantoro and Kennard Shan Hariyanto during the Coding Extracurricular at SMP PL Bintang Laut Solo. Unlike many beginner Construct projects, nearly every visual asset — trees, maps, environments, and other in-game artwork — was created from scratch by the team, who also designed and implemented the gameplay themselves while learning through documentation and tutorials.",
+      "A collaborative game developed with Mikael Isaac Jensen Hermantoro and Kennard Shan Hariyanto during the Coding Extracurricular at SMP PL Bintang Laut Solo. Unlike many beginner Construct projects, nearly every visual asset - trees, maps, environments, and other in-game artwork - was created from scratch by the team, who also designed and implemented the gameplay themselves while learning through documentation and tutorials.",
     role: ["Game Developer", "Game Artist"],
     technologies: ["Construct 3", "Original Pixel Art", "Level Design"],
     links: [

@@ -11,7 +11,7 @@ export function Projects() {
         eyebrow: "Portfolio",
         title: "Selected Projects",
         description:
-          "Progressive Web Apps, school systems, and games built to solve real problems — most began as functioning school software before being adapted into standalone frontend demonstrations."
+          "Progressive Web Apps, school systems, and games built to solve real problems - most began as functioning school software before being adapted into standalone frontend demonstrations."
       })}
 
       <div class="projects-grid">

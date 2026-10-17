@@ -4,7 +4,7 @@ export const timeline = [
     title: "Began Coding Extracurricular & Built First Game",
     organization: "SMP PL Bintang Laut Solo",
     description:
-      "Joined the school's Coding Extracurricular program and developed Grape Collector, a top-down 2D item-collection game built in Construct 3 — an introduction to game logic, level design, and event-based programming.",
+      "Joined the school's Coding Extracurricular program and developed Grape Collector, a top-down 2D item-collection game built in Construct 3 - an introduction to game logic, level design, and event-based programming.",
   },
   {
     year: "2023",
@@ -25,7 +25,7 @@ export const timeline = [
     title: "Built Four School Systems as PWAs",
     organization: "SMA Regina Pacis Surakarta",
     description:
-      "Designed and developed Assignly, RecisCam, RecisCare, and RecisPermit — real school systems for assignment tracking, duty attendance, and permission management — later converted into standalone Progressive Web App demonstrations for this portfolio.",
+      "Designed and developed Assignly, RecisCam, RecisCare, and RecisPermit - real school systems for assignment tracking, duty attendance, and permission management - later converted into standalone Progressive Web App demonstrations for this portfolio.",
   },
   {
     year: "June 2025 – June 2026",

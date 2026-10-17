@@ -1,12 +1,12 @@
 const BURN_MS = 850;
 const EMBER_TAIL_MS = 250;
-// Safety ceiling only — normal runs finish the moment the last ember fades (see step()),
+// Safety ceiling only - normal runs finish the moment the last ember fades (see step()),
 // this just guarantees the overlay can never be pinned open by a stray particle.
 const HARD_MAX_MS = 1600;
 const COLUMNS = 48;
 const JITTER_PX = 70;
 // The front travels past the top edge by this much so it exits the visible viewport (and
-// stops being drawn) well before the ease-in-out curve's tail decelerates to a crawl —
+// stops being drawn) well before the ease-in-out curve's tail decelerates to a crawl -
 // otherwise it visually stalls just below the edge for a beat before vanishing.
 const OVERSHOOT_PX = 160;
 const BASE_FILL = "#08070c";
@@ -15,7 +15,7 @@ const GLOW_INNER = "#ffd86b";
 const GLOW_OUTER = "rgba(255, 139, 94, 0.55)";
 const EMBER_COLORS = ["#ffd86b", "#ff8b5e", "#f7c95c"];
 
-// Cheap layered-sine "value noise" — reads as organic jitter without a real Perlin implementation.
+// Cheap layered-sine "value noise" - reads as organic jitter without a real Perlin implementation.
 function noiseAt(column, elapsed) {
   const n1 = Math.sin(elapsed * 0.0021 * column.freq + column.phase);
   const n2 = Math.sin(elapsed * 0.0037 * column.freq + column.phase2) * 0.5;
@@ -42,7 +42,7 @@ export function initIntroBurn() {
 
   // Two layers: `canvas` holds the persistent burn mask (its punched-out holes must
   // survive across frames), `particleCanvas` holds the embers and is fully cleared and
-  // redrawn every frame — otherwise every past ember position stays baked into the
+  // redrawn every frame - otherwise every past ember position stays baked into the
   // pixels forever (since we never clear the shared canvas) and the whole smear just
   // vanishes in one frame when the overlay is removed, instead of each ember fading.
   [canvas, particleCanvas].forEach((c) => {
@@ -99,7 +99,7 @@ export function initIntroBurn() {
   }
 
   // True once the front (plus its glow/jitter margin) has fully cleared the top of the
-  // viewport — after this the edge is invisible, so further redraws would be wasted work.
+  // viewport - after this the edge is invisible, so further redraws would be wasted work.
   function frontOffscreen(points) {
     return points.every(([, y]) => y < -60);
   }
@@ -180,7 +180,7 @@ export function initIntroBurn() {
         progress < 0.5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2;
 
       // Stop drawing the glowing/charred edge as soon as it's off-screen, rather than
-      // waiting for progress to hit 1 — the ease-in-out tail crawls near the end, so waiting
+      // waiting for progress to hit 1 - the ease-in-out tail crawls near the end, so waiting
       // for exact completion makes the edge visibly stall at the top before it vanishes.
       if (progress < 1) {
         const points = frontPoints(eased, elapsed);
@@ -199,7 +199,7 @@ export function initIntroBurn() {
       updateEmbers(dt);
 
       // Keep going past the nominal tail window if embers are still mid-fade, so the
-      // overlay never gets yanked away while a particle is still visibly alight — but
+      // overlay never gets yanked away while a particle is still visibly alight - but
       // never past HARD_MAX_MS, in case something keeps spawning/reviving particles.
       const stillSettling = elapsed < totalMs || particles.length > 0;
       if (stillSettling && elapsed < HARD_MAX_MS) {
